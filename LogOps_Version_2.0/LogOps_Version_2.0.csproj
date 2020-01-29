@@ -9,6 +9,12 @@
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\coreui-free\css\" />
+    <Folder Include="wwwroot\lib\coreui-free\js\" />
+    <Folder Include="wwwroot\lib\coreui-free\icons\" />
+  </ItemGroup>
+
 
 
 </Project>
