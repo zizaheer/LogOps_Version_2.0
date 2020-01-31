@@ -2,21 +2,28 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 body {
-
     line-height: 1 !important;
+    background-color:#fff !important;
 }
 
 .navbar {
     justify-content: space-evenly !important;
 }
+
 .navbar-brand {
-    width: 100px !important;
+    width: 200px !important;
+    justify-content: space-evenly !important;
 }
 
 .dropdown-menu {
-margin-top:10px;
-line-height:1 !important;
+    margin-top: 10px;
+    line-height: 1 !important;
 }
+
+.app-header .dropdown-item {
+    min-width: 250px !important;
+}
+
 .dropdown-item:hover, .dropdown-item:focus {
     color: #f3f3f3;
     text-decoration: none;
@@ -27,13 +34,26 @@ line-height:1 !important;
 .client-logo {
     height: 30px !important;
     width: auto !important;
-    margin: 0 auto !important;
 }
 
 .sidebar {
     background: #00446d !important;
     line-height: 1.5 !important;
 }
+    .sidebar .nav-title {
+        background: #013a5d !important;
+    }
+
+    .main .container-fluid {
+        padding: 10px 10px;
+        max-width: 1152px !important;
+        margin: 0 !important;
+    }
+
+.main .row {
+    margin: 0 !important;
+}
+
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
@@ -50,32 +70,6 @@ line-height:1 !important;
     width: auto;
     height: 15px;
 }
-.header-menu {
-    height: 60px;
-    background-color: #f3f3f3;
-    /*border:1px solid red;*/
-    padding: 15px 10px 8px 15px;
-    vertical-align: top;
-    font-size: .8rem;
-}
-
-    .header-menu img {
-        width: auto;
-        height: 16px;
-    }
-
-    .header-menu a {
-        color: #383c92;
-    }
-
-    .header-menu .row {
-        margin: 0 !important;
-    }
-
-.dashboard-img {
-    height: 39px;
-    width: auto;
-}
 
 .no-padding {
     padding: 0 !important;
@@ -86,93 +80,93 @@ line-height:1 !important;
 }
 
 .padding-xs {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
 }
 
 .padding-sm {
-    padding-left: 4px !important;
-    padding-right: 4px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
 }
 
 .padding-md {
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-}
-
-.padding-lg {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-}
-
-.padding-xl {
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
 
+.padding-lg {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.padding-xl {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
 .padding-xxl {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
 }
 
 .padding-xxxl {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
 }
 
 
 .padding-left-xs {
-    padding-left: 2px !important;
+    padding-left: 3px !important;
 }
 
 .padding-left-sm {
-    padding-left: 4px !important;
+    padding-left: 5px !important;
 }
 
 .padding-left-md {
-    padding-left: 6px !important;
+    padding-left: 10px !important;
 }
 
 .padding-left-lg {
-    padding-left: 8px !important;
+    padding-left: 15px !important;
 }
 
 .padding-left-xl {
-    padding-left: 10px !important;
+    padding-left: 20px !important;
 }
 
-.padding-left-xl {
-    padding-left: 10px !important;
+.padding-left-xxl {
+    padding-left: 25px !important;
 }
 
 .padding-left-xxxl {
-    padding-left: 14px !important;
+    padding-left: 30px !important;
 }
 
 .padding-right-xs {
-    padding-right: 2px !important;
+    padding-right: 3px !important;
 }
 
 .padding-right-sm {
-    padding-right: 4px !important;
+    padding-right: 5px !important;
 }
 
 .padding-right-md {
-    padding-right: 6px !important;
-}
-
-.padding-right-lg {
-    padding-right: 8px !important;
-}
-
-.padding-right-xl {
     padding-right: 10px !important;
 }
 
+.padding-right-lg {
+    padding-right: 15px !important;
+}
+
+.padding-right-xl {
+    padding-right: 20px !important;
+}
+
 .padding-right-xxl {
-    padding-right: 12px !important;
+    padding-right: 25px !important;
 }
 
 .padding-right-xxxl {
-    padding-right: 14px !important;
+    padding-right: 30px !important;
 }
