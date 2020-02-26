@@ -2,24 +2,116 @@
     ViewData["Title"] = "Home Page";
 }
 
+<!-- Driver block-->
+<div class="driver-block hide-block">
+    <div class="driver-header">
+        <div class="row">
+            <div class="col-8 padding-sm">
+                <div class="form-check-inline">
+                    <input type="checkbox" class="form-check-input chk-select-driver" name="driver-group" onchange="toggleDriverCheckbox()">
+                    <label class="form-check-label"><strong>Amin mia</strong></label>
+                </div>
+            </div>
+            <div class="col-4 no-padding text-right ">
+                <div class="btn-group btn-group-sm margin-top-xs margin-right-xs" role="group" aria-label="order-action">
+                    <button class="btn-sm btn-primary btn-unique driver-block-icon btn-pickup" title="Pick up" data-toggle="modal">
+                        <i class="fa fa-arrow-circle-up"></i>
+                    </button>
+                    <button class="btn-sm btn-warning driver-block-icon btn-passon" title="Pass on" data-toggle="modal">
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+                    <button class="btn-sm btn-success driver-block-icon btn-deliver" title="Deliver" data-toggle="modal">
+                        <i class="fa fa-check-circle"></i>
+                    </button>
+                    <button type="button" class="btn-sm btn-danger driver-block-icon btn-remove-driver margin-left-lg" data-driverid="" title="Deliver">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table-striped" style="width:100%;">
+        <thead class="allocated-order-header">
+            <tr>
+                <th style="width:60px" class="padding-sm">W/B#</th>
+                <th style="width:30px">SVC</th>
+                <th style="width:50px">UNIT</th>
+                <th style="width:80px">SHIPPER</th>
+                <th>CONSIGNEE</th>
+                <th>TYPE</th>
+                <th>STATUS</th>
+            </tr>
+        </thead>
+        <tbody class="allocated-order-body">
+            <tr>
+                <td style="width:60px">
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="rdoWaybillNo" id="chkWayBillNumber" data-orderid="" data-waybillnumber="" />
+                        <a class="btnEdit" href="#" data-waybillnumber='' data-toggle="modal" style="cursor:pointer"><label class="form-check-label" style="cursor:pointer">307905</label></a>
+                    </div>
+                </td>
+
+                <td style="width:30px">SMD</td>
+                <td style="width:50px">
+                    2 SKD; 2 pc
+                </td>
+                <td title="">
+                    <span class="d-inline-block text-truncate" style="max-width: 75px;">
+                        Praeterea iter est quasdam res quas ex communi.
+                    </span>
+                </td>
+                <td  title="">
+                    <span class="d-inline-block text-truncate" style="max-width: 75px;">
+                        Praeterea iter est quasdam res quas ex communi.
+                    </span>
+                </td>
+                <td><span title="S: Single Order; R: Return Order">S</span></td>
+                <td>D</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+</div>
+
+
+<!-- Driver block-->
+
+
 <div class="row content-header">
-    <div class="col-8">
+    <div class="col-9">
         <div class="content-title">Dispatch board</div>
     </div>
-    <div class="col-4 text-right">
-        <button class="btn btn-sm btn-primary"><i class="fa fa-plus-circle"></i>  New order</button>
+    <div class="col-3 text-right">
+        <div class="btn-group" role="group">
+            <button class="btn btn-sm btn-primary"><i class="fa fa-plus-circle"></i> New order </button>
+            <button class="btn btn-sm" disabled> <i class="fa fa-ellipsis-v"></i> </button>
+            <button class="btn btn-sm btn-secondary" id="btn-add-driver"><i class="fa fa-user-o"></i> Add driver </button>
+        </div>
+        @*<div class="row no-margin">
+            <div class="col-2 text-right no-padding">
+                <button class="btn btn-sm btn-primary"><i class="fa fa-plus-circle"></i> New order </button>
+            </div>
+            <div class="col-1 text-center no-padding">
+                <span class="vertical-divider ">|</span>
+            </div>
+            <div class="col-2 text-left no-padding">
+                <button class="btn btn-sm btn-secondary" id="btn-add-driver"><i class="fa fa-user-o"></i> Add driver </button>
+            </div>
+        </div>*@
     </div>
+    
 </div>
 
 <div class="content-body">
-    <div class="row" style="background-color:#ffd800">
-        <div class="col-12" style="background-color:#00ff21">
-            asdf
+    <div class="row">
+        <div class="driver-container">
+
         </div>
     </div>
 </div>
 
-@*<div class="text-center">
-        <h1 class="display-4">Welcome</h1>
-        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>*@
+
+
+
