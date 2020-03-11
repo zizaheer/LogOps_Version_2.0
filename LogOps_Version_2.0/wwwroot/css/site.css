@@ -173,7 +173,9 @@ body {
     padding-right: 30px !important;
 }
 
-
+.padding-bottom-none {
+    padding-bottom: 0 !important;
+}
 .padding-bottom-xs {
     padding-bottom: 3px !important;
 }
@@ -202,6 +204,9 @@ body {
     padding-bottom: 30px !important;
 }
 
+.padding-top-none {
+    padding-top: 0 !important;
+}
 .padding-top-xs {
     padding-top: 3px !important;
 }
@@ -437,7 +442,7 @@ color: #b0b0b0;
 .driver-block {
     /*overflow: auto;*/
     display: block;
-    height: 150px;
+    min-height: 130px;
     min-width: 420px;
     border: 1px solid #e3e3e3;
     background-color: #fff;
@@ -445,9 +450,9 @@ color: #b0b0b0;
     padding: 4px;
 }
 .driver-header {
-    background-color: #00446d;
+    background-color: #006daf;
     margin-bottom: 5px;
-    color:#fff
+    color: #fff
 }
 
 
@@ -464,13 +469,18 @@ color: #b0b0b0;
 .allocated-order-header {
     background-color: #d1dbe1 !important;
     font-size: .65rem;
-}
-.allocated-order-body {
-    font-size: .6rem;
-    padding: 3px 8px;
-    overflow: auto;
+    font-weight:bold;
 }
 
+.allocated-order-body {
+    font-size: .7rem;
+    padding: 0;
+    overflow: auto;
+}
+.allocated-order-body a {
+    font-weight:bold;
+    color:#377deb
+}
 
 .hide-block {
     position: absolute;
